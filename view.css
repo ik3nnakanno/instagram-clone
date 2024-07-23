@@ -1,0 +1,574 @@
+.view {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.397);
+    z-index: 99999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    gap: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.views {
+    width: 42%;
+    height: 95lvh;
+    background: black;
+    color: white;
+}
+
+.views .vpost {
+    width: 100% !important;
+    height: 95lvh;
+}
+
+.view .x,
+.xs {
+    position: absolute;
+    top: 1lvh;
+    cursor: pointer;
+    right: 2%;
+    width: 30px;
+}
+
+.view .display {
+    width: 50%;
+    position: relative;
+    display: flex;
+    margin-top: 10px;
+    user-select: none;
+    cursor: pointer;
+    flex-direction: column;
+}
+
+.view .comimg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.view .vpro {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.view .display .ppp img {
+    width: 100%;
+    display: block;
+    top: 0;
+    left: 0;
+}
+
+.view .vliked {
+    width: 120px;
+    height: 120px;
+    top: 50%;
+    display: block;
+    margin: 0 auto 0 auto;
+    left: 40%;
+    opacity: .9;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes like {
+    0% {
+        transform: scale(1);
+        display: block;
+    }
+
+    5% {
+        transform: scale(.9);
+    }
+
+    15% {
+        transform: scale(1.1);
+        transform: rotate(15deg);
+    }
+
+    40% {
+        transform: scale(1);
+        transform: rotate(0);
+        transform: translateY(-60%);
+    }
+
+    90% {
+        opacity: 0.8;
+        transform: translateY(-80%);
+    }
+
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+.view .vliked {
+    width: 120px;
+    animation: like .7s linear;
+    display: none;
+    z-index: 9999;
+}
+
+.view .views .details {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.views .statz {
+    padding: 5px;
+}
+
+.view .views .details img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.views .top {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.more {
+    width: 25px;
+    height: 25px;
+}
+
+.view a {
+    color: black;
+}
+
+.diss {
+    position: relative;
+
+}
+
+.views .comments {
+    display: flex;
+    flex-direction: column;
+    height: 60lvh;
+    padding: 10px;
+    margin: 10px 0;
+    border-top: 1px solid rgb(116, 116, 116);
+    border-bottom: 1px solid rgb(116, 116, 116);
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.views .comment {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    box-sizing: border-box;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.comimg {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+}
+
+.views .react {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between;
+}
+
+.views .react span {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.show {
+    display: block;
+    width: 30px;
+}
+
+.hide {
+    display: none;
+    width: 30px;
+}
+
+.views .react img {
+    width: 30px;
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+.views .add {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.views .add textarea {
+    border: none;
+    width: 90%;
+    resize: none;
+    background: none;
+    overflow: hidden;
+}
+
+.views .p {
+    display: flex;
+    width: 90%;
+    align-items: center;
+}
+
+.views .p button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.views .add textarea:focus {
+    outline: none;
+}
+
+.p button {
+    display: none;
+}
+
+.views .add img {
+    width: 30px;
+}
+
+.vview,
+.pview {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.397);
+    z-index: 99999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    gap: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.views {
+    width: 42%;
+    height: 95lvh;
+    /* background: white; */
+}
+
+.views .vpost {
+    width: 100% !important;
+    height: 95lvh;
+}
+
+.vview .x,
+.vview .xs,
+.pview .x,
+.pview .xs {
+    position: absolute;
+    top: 1lvh;
+    cursor: pointer;
+    right: 2%;
+    width: 30px;
+}
+
+.vview .display,
+.pview .display {
+    width: 50%;
+    position: relative;
+    display: flex;
+    margin-top: 10px;
+    user-select: none;
+    cursor: pointer;
+    flex-direction: column;
+}
+
+.vview .comimg,
+.pview .comimg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.vview .vpro .pview .vpro {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.vview .display .ppp img,
+.pview .display .ppp img {
+    width: 100%;
+    display: block;
+    top: 0;
+    left: 0;
+}
+
+.vview .vliked,
+.pview .vliked {
+    width: 120px;
+    height: 120px;
+    top: 50%;
+    display: block;
+    margin: 0 auto 0 auto;
+    left: 40%;
+    opacity: .9;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes like {
+    0% {
+        transform: scale(1);
+        display: block;
+    }
+
+    5% {
+        transform: scale(.9);
+    }
+
+    15% {
+        transform: scale(1.1);
+        transform: rotate(15deg);
+    }
+
+    40% {
+        transform: scale(1);
+        transform: rotate(0);
+        transform: translateY(-60%);
+    }
+
+    90% {
+        opacity: 0.8;
+        transform: translateY(-80%);
+    }
+
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+.vview .vliked,
+.pview .vliked {
+    width: 120px;
+    animation: like .7s linear;
+    display: none;
+    z-index: 9999;
+}
+
+.vview .views .details,
+.pview .views .details {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.views .statz {
+    padding: 5px;
+}
+
+.vview .views .details img,
+.pview .views .details img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.vview .views .top,
+.pview .views .top {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.more {
+    width: 25px;
+    height: 25px;
+}
+
+.diss {
+    position: relative;
+
+}
+
+.vview .views .comments,
+.pview .views .comments {
+    display: flex;
+    flex-direction: column;
+    height: 60lvh;
+    padding: 10px;
+    margin: 10px 0;
+    border-top: 1px solid rgb(116, 116, 116);
+    border-bottom: 1px solid rgb(116, 116, 116);
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.vview .views .comment,
+.pview .views .comment {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    box-sizing: border-box;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.comimg {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+}
+
+.vview .views .react,
+.pview .views .react {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between;
+}
+
+.vview .views .react span,
+.pview .views .react span {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.show {
+    display: block;
+    width: 30px;
+}
+
+.hide {
+    display: none;
+    width: 30px;
+}
+
+.vview .views .react img,
+.pview .views .react img {
+    width: 30px;
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+.vview .views .add,
+.pview .views .add {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.vview .views .add textarea,
+.pview .views .add textarea {
+    border: none;
+    width: 90%;
+    resize: none;
+    background: none;
+    overflow: hidden;
+}
+
+.vview .views .p,
+.pview .views .p {
+    display: flex;
+    width: 90%;
+    align-items: center;
+}
+
+.vview .views .p button .pview .views .p button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.vview .views .add textarea:focus,
+.pview .views .add textarea:focus {
+    outline: none;
+}
+
+.p button {
+    display: none;
+}
+
+.vview .views .add img,
+.pview .views .add img {
+    width: 30px;
+}
+
+@media (max-width:800px) {
+
+    .view,
+    .pview,
+    .vview {
+        flex-direction: column;
+        height: 80vh;
+        margin-top: 4lvh;
+        padding-top: 8lvh;
+    }
+
+    .views,
+    .vview .views {
+        height: 80%;
+        width: 80%;
+        background: black;
+        color: white;
+    }
+
+
+    .x,
+    .xs {
+        position: fixed;
+        right: 5%;
+        top: 8lvh;
+    }
+
+    .vview .views .comments,
+    .pview .views .comments {
+        background: black;
+    }
+
+    .vview .views .comments,
+    .pview .views .comments {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border-top: 1px solid rgb(116, 116, 116);
+        border-bottom: 1px solid rgb(116, 116, 116);
+        overflow-y: scroll;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    .diss {
+        display: none;
+    }
+
+    .vview .views .comment,
+    .pview .views .comment {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        box-sizing: border-box;
+        gap: 10px;
+        margin-top: 18px;
+    }
+
+    .vview .views .react,
+    .pview .views .react {
+        display: none !important;
+    }
+}

@@ -1,0 +1,244 @@
+@font-face {
+    font-family: Halloween;
+    src: url(fonts/HalloweenSlime.otf);
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: Satoshi;
+    src: url(fonts/Satoshi-Medium.ttf);
+}
+
+@font-face {
+    font-family: pop;
+    src: url(Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: beu;
+    src: url(BeautifulPeoplePersonalUse-dE0g.ttf);
+}
+
+:root {
+    --col1: rgb(14, 14, 14);
+    --col2: rgb(245, 245, 245);
+    --col3: rgb(196, 48, 146);
+    --col4: rgb(10, 98, 230);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    padding-top: 10px;
+    font-family: pop;
+}
+
+a {
+    color: blue;
+}
+
+.use {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+a:active {
+    color: var(--col3);
+}
+
+.error {
+    border: 2px solid red;
+}
+
+.hidden {
+    display: none;
+}
+
+form h2 {
+    font-family: beu;
+    color: black;
+    font-style: italic;
+    font-size: 35px;
+    cursor: pointer;
+    margin: 10px 2px;
+}
+
+#show-password {
+    display: none;
+}
+
+form {
+    width: 340px;
+    padding: 10px 30px;
+    border: 1px solid rgb(172, 172, 172);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    float: right;
+    margin: 17px;
+    gap: 2px;
+}
+
+form input {
+    margin-bottom: 5px;
+    padding: 10px;
+    border: 1px solid rgb(167, 167, 167);
+}
+
+h5 {
+    font-weight: lighter;
+}
+
+small {
+    color: red;
+    margin-top: -5px;
+}
+
+form #password {
+    width: 92%;
+    margin-bottom: 0px;
+    border: none;
+    outline: none;
+}
+
+form input:focus {
+    outline: 1px solid rgb(146, 146, 146);
+    background: none;
+}
+
+form .form-tag {
+    border: 1px solid rgb(167, 167, 167);
+    margin-bottom: 15px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+form button {
+    background: var(--col4);
+    padding: 7px;
+    color: white;
+    border-radius: 8px;
+    border: 1px solid white;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+img {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    pointer-events: none;
+}
+
+form button:hover {
+    opacity: 1;
+    transform: scale(1.008);
+}
+
+form button:disabled {
+    opacity: 0.5;
+    cursor: no-drop;
+}
+
+form button:disabled:hover {
+    transform: scale(1);
+}
+
+.addon {
+    padding: 10px;
+    border: 1px solid rgb(172, 172, 172);
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 340px;
+    margin: 17px;
+}
+
+
+.img {
+    width: 400px;
+    overflow: hidden;
+    display: flex;
+    padding-top: 15px;
+}
+
+.img img {
+    border: 3px solid rgba(19, 19, 19, 0.925);
+    border-radius: 35px;
+    background: rgb(24, 24, 24);
+}
+
+.img2 {
+    margin-left: -105px;
+    z-index: 99;
+    display: none;
+    transition: opacity 1s ease;
+}
+
+.img2.visible {
+    display: block;
+}
+
+.img2 img {
+    height: 89lvh;
+    width: 300px;
+}
+
+.see {
+    width: 20px;
+    height: 20px;
+}
+
+.img1 img {
+    height: 85lvh;
+    width: 270px;
+}
+
+#password2 {
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+}
+
+.img1 {
+    z-index: 1;
+}
+
+.e {
+    color: rgb(228, 43, 43);
+}
+
+@media (max-width:850px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img {
+        display: none;
+    }
+
+    form img {
+        display: block !important;
+    }
+}

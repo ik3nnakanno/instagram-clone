@@ -1,0 +1,186 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: pop;
+}
+
+body {
+    transition: background-color 0.5s, color 0.5s;
+}
+
+body.light-theme {
+    background-color: white;
+    color: black;
+}
+
+body.dark-theme {
+    background-color: black;
+    color: white;
+}
+
+body.light-theme .dark {
+    display: none;
+}
+
+body.dark-theme .light {
+    display: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+a,
+label,
+small,
+p {
+    transition: color 0.5s;
+    color: black;
+}
+
+body.light-theme h1,
+body.light-theme h2,
+body.light-theme h3,
+body.light-theme h4,
+body.light-theme h5,
+body.light-theme a,
+body.light-theme label,
+body.light-theme small,
+body.light-theme p {
+    color: black;
+}
+
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3,
+body.dark-theme h4,
+body.dark-theme h5,
+body.dark-theme a,
+body.dark-theme label,
+body.dark-theme small,
+body.dark-theme p {
+    color: white;
+}
+
+.highlight {
+    color: blue !important;
+    cursor: pointer;
+}
+
+.dark {
+    background: none;
+}
+
+textarea {
+    background: none;
+}
+
+.light {
+    display: block;
+}
+
+@font-face {
+    font-family: veg;
+    src: url(VeganStylePersonalUse-5Y58.ttf);
+}
+
+@font-face {
+    font-family: all;
+    src: url(AllessaPersonalUse-4pRl.ttf);
+}
+
+@font-face {
+    font-family: sho;
+    src: url(ShowUpFreeTrial-mLVWj.otf);
+}
+
+@font-face {
+    font-family: pop;
+    src: url(Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: beu;
+    src: url(BeautifulPeoplePersonalUse-dE0g.ttf);
+}
+
+img {
+    background: none;
+}
+
+h3 {
+    background: none;
+}
+
+.unbook {
+    display: none;
+}
+
+main {
+    float: right;
+    margin-left: 15%;
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    gap: 20%;
+}
+
+.verif {
+    width: 14px !important;
+    height: 14px !important;
+}
+
+.more {
+    width: 25px !important;
+    height: 25px !important;
+}
+
+.comins {
+    height: 100lvh;
+}
+
+.comingsoon {
+    margin-top: 5%;
+    margin-left: 18%;
+}
+
+.noti {
+    position: fixed;
+    top: 3vh;
+    left: 20%;
+    z-index: 9999999;
+    background: gray;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: none;
+}
+
+main .side {
+    margin-top: 100px;
+}
+
+@media (max-width:800px) {
+    main {
+        margin-left: 10%;
+        margin-right: 10%;
+        padding-top: 3lvh;
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        gap: 20%;
+    }
+}
+
+@media (max-width:600px) {
+    main {
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+        display: flex;
+        padding-top: 3lvh;
+        flex-direction: row;
+        gap: 20%;
+    }
+}

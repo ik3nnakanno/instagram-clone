@@ -1,0 +1,163 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: satoshi;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: satoshi;
+    src: url(Satoshi-Medium.ttf);
+}
+
+.post {
+    width: 540px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid rgba(15, 15, 15, 0.712);
+    border-radius: 5px;
+    margin: 20px;
+    padding: 10px;
+    box-shadow: 2px 2px 5px gray;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 5px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info .name {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.postimg {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 300px;
+    cursor: pointer;
+}
+
+.postimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.postimg .liked {
+    position: absolute;
+}
+
+.postimg .liked img {
+    width: 100px;
+    height: 100px;
+    animation: grow .9s linear;
+    opacity: 0;
+    display: block;
+}
+
+/* .postimg.clicked .liked img {
+    display: none;
+} */
+
+@keyframes grow {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+
+    2% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    30% {
+        transform: scale(1.05);
+    }
+
+    70% {
+        transform: scale(1);
+    }
+
+    90% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+
+.icons .like img {
+    width: 30px;
+    cursor: pointer;
+}
+
+.comments label {
+    opacity: .8;
+}
+
+.addcomment {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.init {
+    display: flex;
+    align-items: center;
+}
+
+.verified img {
+    width: 14px;
+    height: 14px;
+    border: none;
+    margin: 0;
+}
+
+.init img {
+    width: 15px;
+    height: 15px;
+    margin: 9px 5px 0px 5px;
+}
+
+.addcomment img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.addcomment input {
+    border: none;
+}
+
+.addcomment input:focus {
+    border: none;
+    outline: none;
+}
+
+.time label {
+    opacity: .8;
+}

@@ -1,0 +1,196 @@
+.profile {
+    margin-left: 15%;
+    width: 80%;
+    padding-top: 100px;
+}
+
+.profile .top {
+    display: flex;
+    gap: 20px;
+}
+
+.profile .top .ppro {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.profile .you {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.verif {
+    width: 14px !important;
+}
+
+.profile .you .butts {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.you button {
+    padding: 8px 10px;
+    border: none;
+    background: rgba(88, 88, 88, 0.527);
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.you button:hover {
+    background: rgba(70, 70, 70, 0.836);
+}
+
+.profile .records {
+    display: flex;
+    gap: 30px;
+}
+
+.profile .you img {
+    width: 30px;
+}
+
+.profile .minnav ul {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    width: 100%;
+}
+
+.profile .minnav ul li {
+    cursor: pointer;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.dash {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.dashes {
+    width: 31%;
+    position: relative;
+    cursor: pointer;
+}
+
+.dash img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+}
+
+.dashes .stat {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+.dashes:hover>.stat {
+    display: flex;
+    background: rgba(0, 0, 0, 0.151);
+}
+
+.dashes .stat img {
+    width: 20px;
+}
+
+#settings {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+    background: gray;
+    border-radius: 15px;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    display: none;
+}
+
+.setbtn {
+    cursor: pointer;
+}
+
+#settings .set {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+@media (max-width:800px) {
+    .profile {
+        margin-left: 10%;
+        width: 80%;
+        padding-top: 10px;
+    }
+
+    .profile .top {
+        display: flex;
+        gap: 20px;
+    }
+
+    .profile .top .ppro {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+    }
+
+    .profile .you {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .profile .you .butts {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .you button {
+        padding: 7px 8px;
+        border: none;
+        background: rgba(88, 88, 88, 0.527);
+        border-radius: 7px;
+        cursor: pointer;
+    }
+
+    .profile .records {
+        display: flex;
+        gap: 10px;
+        font-size: .9rem;
+    }
+
+    .profile .you img {
+        width: 30px;
+    }
+
+    #settings {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 999;
+        background: gray;
+        border-radius: 15px;
+        transform: translate(-50%, -50%);
+        width: 70%;
+        display: none;
+    }
+
+    .dashes {
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,135 @@
+.edit {
+    margin-left: 16%;
+    padding: 10px;
+}
+
+.cphoto {
+    padding: 15px;
+    background: rgb(83, 83, 83);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    width: 40%;
+    justify-content: space-between;
+}
+
+.dttt {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cphoto img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.cphoto button:hover {
+    opacity: 1;
+}
+
+.cphoto button {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    background: rgb(18, 18, 177);
+    cursor: pointer;
+    opacity: .8;
+}
+
+.edtbtn:hover {
+    opacity: 1;
+}
+
+.edtbtn {
+    padding: 15px;
+    width: 42%;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    background: rgb(18, 18, 177);
+    cursor: pointer;
+    opacity: .8;
+}
+
+.bio textarea {
+    border: 1px solid gray;
+    padding: 10px;
+    width: 40%;
+    aspect-ratio: 2/.5;
+    resize: none;
+    border-radius: 12px;
+}
+
+.chgpht {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: gray;
+    border-radius: 15px;
+    width: 50%;
+    z-index: 999;
+    display: none;
+}
+
+.chgpht .chg {
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.chgpht .uploadn {
+    color: blue;
+    cursor: pointer;
+}
+
+.chgpht .remove {
+    color: rgb(247, 38, 38);
+    cursor: pointer;
+}
+
+.chgpht .canc {
+    cursor: pointer;
+}
+
+@media (max-width:800px) {
+    .edit {
+        margin-left: 1%;
+        padding: 10px;
+    }
+
+    .cphoto {
+        padding: 15px;
+        background: rgb(83, 83, 83);
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        width: 70%;
+        justify-content: space-between;
+    }
+
+    .edtbtn {
+        padding: 15px;
+        width: 72%;
+        border: none;
+        border-radius: 8px;
+        color: white;
+        background: rgb(18, 18, 177);
+        cursor: pointer;
+        opacity: .8;
+    }
+
+    .bio textarea {
+        border: 1px solid gray;
+        padding: 10px;
+        width: 70%;
+        aspect-ratio: 2/.5;
+        resize: none;
+        border-radius: 12px;
+    }
+}
